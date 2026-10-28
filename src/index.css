@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+  }
+
+  *, *::before, *::after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    background-color: #F5F6FC;
+    color: #161B32;
+    overflow-x: hidden;
+  }
+}
+
+/* Custom scrollbars for data tables and panels */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #EAF3FF;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #CADFFF;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #7657FF;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #7657FF 0%, #28D7E5 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-violet-cyan {
+  background: linear-gradient(135deg, #7657FF 0%, #28D7E5 100%);
+}
+
+.gradient-dark-hero {
+  background: radial-gradient(circle at 85% 20%, #1B1B45 0%, #10152B 75%);
+}
+
+.data-pattern-dark {
+  background-color: #10152B !important;
+  background-image: radial-gradient(rgba(40, 215, 229, 0.15) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
