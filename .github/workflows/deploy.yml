@@ -34,7 +34,7 @@ jobs:
         run: npm ci
 
       - name: Build
-        run: npm run build -- --base=/growthpilots/
+        run: npm run build -- --base=/GrowthPilots/
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
